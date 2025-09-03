@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente de diminua o tamanho do seu navegador
+    </p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 950px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto grande">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a como reproduzir um áudio em HTML5</p>
+    <audio preload="metadata" controls loop> <!-- preload -> Como você vai carregar aquele áudio, recomendado o metadata; controls -> Usado para controlar o áudio e despausá-lo; loop -> quando o áudio acabar, ele vai recomeçar -->
+        <source src="midia/pajama-party.mp3" type="audio/mpeg"> <!-- Vai colocar o local onde o arquivo está; type -> colocar audio/extensão do arquivo -->
+        <source src="midia/pajama-party.ogg" type="audio/ogg">
+        <source src="midia/pajama-party.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/pajama-party.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

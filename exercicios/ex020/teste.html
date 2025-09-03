@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: green;
+        }
+
+        a#principal:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        div>p {
+            display: none;
+        }
+
+        div:hover>p {
+            display: block;
+            color: white;
+            background-color: black;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+    <p>
+        Para acessar o youtube, <a href="youtube.com" target="_blank">clique aqui</a>
+    </p>
+
+    <p>
+        Para acessar a twitch, <a href="https://www.twitch.tv/" target="_blank" id="principal">clique aqui</a>
+    </p>
+
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+</body>
+
+</html>
